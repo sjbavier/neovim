@@ -1,4 +1,5 @@
 
+
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -14,13 +15,13 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- use({
-	-- 'rose-pine/neovim',
-	-- as = 'rose-pine',
+  use({
+	'rose-pine/neovim',
+	as = 'rose-pine',
 	-- config = function()
 		-- vim.cmd('colorscheme rose-pine')
 	-- end
-  -- })
+  })
   use({
 	'JoosepAlviste/palenightfall.nvim',
 	as = 'palenightfall',
