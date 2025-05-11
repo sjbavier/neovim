@@ -18,16 +18,16 @@ return require('packer').startup(function(use)
   use({
 	'rose-pine/neovim',
 	as = 'rose-pine',
-	-- config = function()
-		-- vim.cmd('colorscheme rose-pine')
-	-- end
+	config = function()
+		vim.cmd('colorscheme rose-pine')
+	end
   })
   use({
 	'JoosepAlviste/palenightfall.nvim',
 	as = 'palenightfall',
-	config = function()
-		vim.cmd('colorscheme palenightfall')
-	end
+	-- config = function()
+		-- vim.cmd('colorscheme palenightfall')
+	-- end
   })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
